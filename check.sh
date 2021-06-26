@@ -1,0 +1,1 @@
+echo ubuntuSSH | xyzprjkt` property
