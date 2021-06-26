@@ -1,1 +1,1 @@
-echo ubuntuSSH are xyzprjkt` property
+echo ubuntuSSH are xyzprjkt property
