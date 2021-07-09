@@ -7,8 +7,6 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
-  docker:
-      - image: xyzuan/xdocker:latest
     env:
       GitHubMail: "jarbull86@gmail.com"
       GitHubName: "AnGgIt86"
