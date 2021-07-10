@@ -4,19 +4,11 @@ on:
 defaults:
   run:
     shell: bash
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      GitHubMail: "jarbull86@gmail.com"
-      GitHubName: "AnGgIt86"
     steps:
-    - name: Set Git Configs & Secrets
-      run: |
-        git config --global user.email ${GitHubMail}
-        git config --global user.name ${GitHubName}
-        git config --global credential.helper store
-    - run: printenv | sort
     - uses: fastai/workflows/ssh@master
       with:
         ssh_key: ${{ secrets.SSH_KEY }}
