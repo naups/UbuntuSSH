@@ -4,10 +4,9 @@ on:
 defaults:
   run:
     shell: bash
-
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
     - uses: fastai/workflows/ssh@master
       with:
