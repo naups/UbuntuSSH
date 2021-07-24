@@ -12,6 +12,8 @@ jobs:
       with:
         ssh_key: ${{ secrets.SSH_KEY }}
         key_file: id_ecdsa
+        GIT_USERNAME: AnGgIt86
+        GIT_EMAIL: jarbull86@gmail.com
     - uses: actions/checkout@v2
     - run: source check.sh
     - name: Session Setup
